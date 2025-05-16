@@ -19,7 +19,8 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Oxanium, Source Code Pro, Arial, Helvetica, sans-serif;
+  font-family: Cinzel, Oxanium, Source Code Pro, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -44,12 +44,13 @@ const NeonPulsateText = () => {
         color="white"
         textShadow="0 0 5px #fff, 0 0 10px #fff, 0 0 15px #008080, 0 0 20px #008080, 0 0 25px #008080, 0 0 30px #008080, 0 0 35px #0ea094"
         fontSize="3xl"
+        fontFamily="Cinzel Decorative"
         style={{ 
           animation: "neonPulsate 3s infinite, flickerAnimation 0.15s infinite",
           animationTimingFunction: "ease-in-out"
         }}
       >
-        MIDAS REX
+        Midas Rex
       </Text>
       </VStack>
       </Center>
