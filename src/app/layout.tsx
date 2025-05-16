@@ -47,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${cinzel.variable} ${cinzelDecorative.variable} ${geistSans.variable} ${geistMono.variable} ${oxanium.variable} dark`}>
+      <body className={`${cinzel.variable} ${cinzelDecorative.variable} ${sourceCodePro.variable} ${geistSans.variable} ${geistMono.variable} ${oxanium.variable} dark`}>
         <Provider>{children}</Provider>
       </body>
     </html>
