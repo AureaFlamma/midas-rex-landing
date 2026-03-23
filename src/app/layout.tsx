@@ -1,6 +1,17 @@
 import { Provider } from "@/components/ui/provider"
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Source_Code_Pro, Oxanium, Cinzel, Cinzel_Decorative } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Source_Code_Pro,
+  Oxanium,
+  Cinzel,
+  Cinzel_Decorative,
+  Rubik_80s_Fade,
+  Rubik_Glitch,
+  Press_Start_2P,
+  Audiowide,
+} from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -40,6 +51,30 @@ const cinzelDecorative = Cinzel_Decorative({
   weight: ["400", "700", "900"],
 });
 
+const rubik80sFade = Rubik_80s_Fade({
+  variable: "--font-rubik-80s-fade",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const rubikGlitch = Rubik_Glitch({
+  variable: "--font-rubik-glitch",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const pressStart2P = Press_Start_2P({
+  variable: "--font-press-start-2p",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const audiowide = Audiowide({
+  variable: "--font-audiowide",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,7 +82,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${cinzel.variable} ${cinzelDecorative.variable} ${sourceCodePro.variable} ${geistSans.variable} ${geistMono.variable} ${oxanium.variable} dark`}>
+      <body
+        className={`${cinzel.variable} ${cinzelDecorative.variable} ${sourceCodePro.variable} ${geistSans.variable} ${geistMono.variable} ${oxanium.variable} ${rubik80sFade.variable} ${rubikGlitch.variable} ${pressStart2P.variable} ${audiowide.variable} dark`}
+      >
         <Provider>{children}</Provider>
       </body>
     </html>

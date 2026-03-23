@@ -1,4 +1,5 @@
 import { Text, VStack, Center } from "@chakra-ui/react";
+import { ScrollingTextWall } from "@/components/scrolling-text-wall";
 
 const NeonPulsateText = () => {
   // Define the keyframes directly in the component's scope
@@ -27,18 +28,22 @@ const NeonPulsateText = () => {
     <>
       {/* Inject the keyframes */}
       <style>{neonPulsateKeyframes}</style>
-      <Center w="100vw" h="100vh" className="dark">
+      <ScrollingTextWall />
+      <Center position="relative" zIndex={1} w="100vw" h="100vh" className="dark">
       <VStack>
       <Text
         color="white"
         textShadow="0 0 5px #fff, 0 0 10px #fff, 0 0 15px #008080, 0 0 20px #008080, 0 0 25px #008080, 0 0 30px #008080, 0 0 35px #0ea094"
-        fontSize="7xl"
+        fontSize="9xl"
+        fontWeight="500"
+        letterSpacing="0.12em"
+        fontFamily="Cinzel Decorative"
         style={{ 
-          animation: "neonPulsate 3s infinite, flickerAnimation 0.15s infinite",
+          animation: "neonPulsate 5s infinite, flickerAnimation 0.15s infinite",
           animationTimingFunction: "ease-in-out"
         }}
       >
-        Coming Soon
+        Midas Rex
       </Text>
       <Text
         color="white"
@@ -46,11 +51,11 @@ const NeonPulsateText = () => {
         fontSize="3xl"
         fontFamily="Cinzel Decorative"
         style={{ 
-          animation: "neonPulsate 3s infinite, flickerAnimation 0.15s infinite",
+          animation: "neonPulsate 5s infinite, flickerAnimation 0.15s infinite",
           animationTimingFunction: "ease-in-out"
         }}
       >
-        Midas Rex
+        Aurum imprimi non potest
       </Text>
       </VStack>
       </Center>
